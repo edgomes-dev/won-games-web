@@ -1,6 +1,18 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from '../styles/GlobalStyle';
+import { defualtTheme } from '../styles/defaultTheme';
+import Head from 'next/head';
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ThemeProvider theme={defualtTheme}>
+      <Head>
+        <title>Won Games</title>
+        <link rel="manifest" href="/manifest.json" />
+      </Head>
+      <GlobalStyle />
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 }
