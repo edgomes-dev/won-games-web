@@ -9,7 +9,7 @@ export type HeadingProps = {
 
 export function Heading({
   children,
-  color = 'black',
+  color = 'white',
   lineLeft = false,
   lineBottom = false
 }: HeadingProps) {
