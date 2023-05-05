@@ -60,15 +60,9 @@ export function Footer() {
           </Heading>
 
           <nav id="resources">
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-            <Link href="/games">
-              <a>Store</a>
-            </Link>
-            <Link href="/search">
-              <a>Buscar</a>
-            </Link>
+            <Link href="/">Home</Link>
+            <Link href="/games">Store</Link>
+            <Link href="/search">Buscar</Link>
           </nav>
         </S.Column>
 
